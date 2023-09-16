@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.answer {
+    display: none;
+}
+
+body {
+    background: linear-gradient(to right, rgb(175, 103, 233), rgb(101, 101, 231));
+    padding: 20px;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    position: relative;
+}
+
+picture > img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dos {
+    position: absolute;
+    top: -30%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.question-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    cursor: pointer;
+    transition: .5s;
+}
+
+.question {
+    color: black;
+}
+
+.answer.active {
+    display: block;
+}
+
+.question:hover,
+.question:active {
+    font-weight: 700;
+}
+
+.answer {
+    font-size: 14px;
+    padding-top: 10px;
+    
+    transition: .5s ease-in-out;
+}
+
+.question-section {
+    border-bottom: 1px solid black;
+    margin: 15px 0;
+    padding-bottom: 10px;
+}
+
+.arrow {
+    cursor: pointer;
+    transition: .5s;
+}
+
+.arrow.active {
+    transform: rotate(180deg);
+}
+
+@media (min-width: 600px) {
+    main {
+        display: flex;
+    }
+
+    picture > img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .dos {
+        position: absolute;
+        top: 0;
+        left: -50px;
+    }
+}
